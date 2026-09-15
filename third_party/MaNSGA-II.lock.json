@@ -1,0 +1,11 @@
+{
+  "name": "MaNSGA-II",
+  "repository": "https://github.com/HisaoLabSUSTC/MaNSGA-II.git",
+  "commit": "4e5c114f3f913be320f83c346513b9bcec316544",
+  "upstream_supported_platemo": "4.12",
+  "algorithms": [
+    "MaNSGAII",
+    "MaNSGAII_Norm"
+  ],
+  "license_note": "The upstream repository has no top-level license file. Do not vendor or relicense its source without permission."
+}

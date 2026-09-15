@@ -1,0 +1,33 @@
+{
+  "algorithm": "NSGAII",
+  "problem": "DTLZ2",
+  "N": 100,
+  "M": 3,
+  "D": 12,
+  "maxFE": 10000,
+  "EA_ratio": 0.8,
+  "reference_point_num": 2000,
+  "num_holes": 10,
+  "hole_selection": "separated_topB",
+  "hole_min_separation": null,
+  "candidates_per_hole": 1,
+  "retrain_model": false,
+  "retrain_interval": 5,
+  "validation_mode": false,
+  "seed": 1,
+  "results_dir": "Results/NSGAII_DTLZ2_M3_seed1",
+  "platemo_path": null,
+  "problem_parameters": [],
+  "hv_reference_point": [1.1, 1.1, 1.1],
+  "model": {
+    "device": "cuda",
+    "hidden_size": 128,
+    "num_layers": 3,
+    "learning_rate": 0.001,
+    "epochs": 300,
+    "batch_size": 64,
+    "validation_ratio": 0.2,
+    "patience": 40,
+    "weight_decay": 0.000001
+  }
+}
