@@ -152,12 +152,6 @@ MATLAB-free smoke experiment is also available:
 python -m ea_model.cli validate-small --output Results/validation-small
 ```
 
-The legacy command is retained as a thin launcher:
-
-```powershell
-python "Archive+Model.py" run --config configs/dtlz2_nsgaii.json
-```
-
 ## Configuration
 
 The main fields are:
@@ -205,7 +199,7 @@ device is never silently replaced by CPU.
 Run all MATLAB-independent checks:
 
 ```powershell
-python scripts/run_validation.py
+python -m pytest -v -m "not matlab"
 ```
 
 The suite covers archive completeness and updates, duplicate/non-dominated
